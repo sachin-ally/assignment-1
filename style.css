@@ -2,10 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #54c3ef;
-}
-
-html {
-    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 header {
@@ -44,7 +41,8 @@ main {
 
 .container {
     margin-top: 36px;
-    width: 100vh;
+    width: 100%;
+    height: 100%;
     border-radius: 6px;
     padding: 16px;
     background-color: white;
@@ -53,23 +51,37 @@ main {
 }
 
 section {
-    display: inline-block;
     width: 70%;
+    float: left;
     height: 100%;
-    padding-right: 16px;
-    border-right: 1px solid #ccc;
 }
 
 video {
     width: 100%;
-    height: 100%;
 }
 
 .views {
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
+    width: 70%;
+    display: inline-block;
     color: rgba(0, 0, 0, 0.7);
     margin: 0;
     margin-top: 16px;   
+}
+
+.icons {
+    display: inline;
+    float: right;
+    margin-right: 5px;
+}
+
+i {
+    padding: 10px;
+}
+
+i:hover {
+    cursor: pointer;
 }
 
 .desc {
@@ -89,18 +101,27 @@ video {
 }
 
 aside {
-    display: inline;
-    float: right;
-    width: 25%;
+    display: inline-block;
+    width: 28%;
     margin-left: 16px;
     box-sizing: border-box;
     height: 100%;
+    padding-left: 16px;
+    border-left: 1px solid #ccc;
 }
 
-/* figure, figcaption {
+figure, figcaption {
     margin: 0;
     padding: 0;
-} */
+}
+
+figcaption {
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    text-align: center;
+}
 
 .card {
     width: 100%;
@@ -111,6 +132,10 @@ aside {
     box-sizing: border-box;
 }
 
+.card:hover {
+    border: 4px solid #fad744;
+}
+
 .card figure img {
     width: 100%;
     border-top-left-radius: 6px;
@@ -119,19 +144,24 @@ aside {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    margin-bottom: 0;
     width: 100vw;
-    padding: 20px 0;
-    background-color: black;
-    color: white;
+    padding: 80px 0;
+    background-color: #2556a1;
+    color: yellowgreen;
 }
 
 .copyright, .love-text{
     display: inline;
+    font-size: 25px;
 }
 
 .love-text {
     float: right;
+    margin: 0;
     margin-right: 20px;
+}
+
+.copyright {
+    margin-left: 20px;
 }
